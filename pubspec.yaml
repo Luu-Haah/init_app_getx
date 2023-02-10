@@ -1,0 +1,51 @@
+name: init_app_getx
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.5
+  get_storage: ^2.0.3
+  connectivity_plus: ^2.3.6
+  shared_preferences: ^2.0.15
+  cached_network_image: ^3.2.1
+  flutter_svg: ^0.22.0
+  flutter_localizations:
+    sdk: flutter
+  localization: ^2.1.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/InterMedium.ttf
+          weight: 500
+        - asset: assets/fonts/InterRegular.ttf
+          weight: 400
+        - asset: assets/fonts/InterBold.ttf
+          weight: 700
